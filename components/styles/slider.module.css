@@ -1,0 +1,224 @@
+.slider {
+  background-color: #616971;
+  height: 50vh;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+}
+
+@media only screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .slider {
+    height: 75vh;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .slider {
+    height: 55vh;
+  }
+}
+
+.carousel {
+  width: 70%;
+  height: 100%;
+}
+
+.carouselSlide {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.carouselImageText {
+  position: absolute;
+  bottom: 0;
+  text-align: left;
+  padding: 2rem;
+  height: 40% !important;
+  color: white;
+}
+@media only screen and (max-width: 600px) {
+  .carouselImageText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.carouselImageText span {
+  min-width: 22%;
+  text-align: center;
+  font-size: 1.2rem;
+  display: inline-block;
+  padding: 1.2rem 0.2rem;
+  border-radius: 44px;
+  margin-bottom: 2rem;
+  background-color: #f03135;
+}
+@media only screen and (max-width: 600px) {
+  .carouselImageText span {
+    padding: 1.2rem 1.2rem;
+  }
+}
+.carouselImageText h3 {
+  font-size: 3rem;
+}
+@media only screen and (max-width: 600px) {
+  .carouselImageText h3 {
+    font-size: 1.2rem;
+  }
+}
+.carouselImageText p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+@media only screen and (max-width: 600px) {
+  .carouselImageText p {
+    display: none;
+  }
+}
+.carouselImageGradient {
+  position: absolute;
+  bottom: 0;
+  background-image: linear-gradient(to top, #031221 0%, rgba(0, 0, 0, 0) 62%);
+  color: white;
+}
+
+.carouselSlide img {
+  width: 100%;
+  height: 100%;
+}
+.carouselSlide div {
+  width: 100%;
+  height: 100%;
+}
+
+.carouselImage {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slickSlide {
+  text-align: center !important;
+  position: relative !important;
+  box-sizing: border-box;
+  display: flex !important;
+  width: 100% !important;
+  padding-top: 1rem;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .slickSlide {
+    justify-content: center;
+    margin-left: 0 !important;
+    padding-right: 3rem !important;
+    padding-left: 2rem;
+    padding-top: 0;
+    width: 120% !important;
+  }
+}
+
+.slickSlide p {
+  font-size: 1.1rem;
+  color: white;
+  text-align: left;
+  width: 80%;
+  font-weight: lighter;
+  margin-top: 0.5rem;
+  margin-left: 1.3rem;
+}
+.slickSlide span {
+  width: 9rem;
+  height: 27px;
+  margin-top: 1rem;
+  padding: 0.8rem 1.3rem;
+  border-radius: 15px;
+  color: #fff;
+  margin-left: 1.3rem;
+
+  text-align: center;
+}
+
+.thumbnailImage {
+  width: 40%;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 85% !important;
+  border-radius: 4px;
+  position: relative;
+}
+
+.thumbnailImageWhite {
+  position: absolute;
+  width: 3px;
+  height: 77% !important;
+  background-color: white;
+  border-radius: 6px;
+  left: -3%;
+  transform: translateY(-50%, -50%);
+  border-radius: 4px;
+  padding: 1rem 0;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .thumbnailImageWhite {
+    position: absolute;
+    width: 32%;
+    height: 4px !important;
+    background-color: white;
+    border-radius: 6px;
+    left: 5%;
+    bottom: 8px;
+    transform: translateY(-50%, -50%);
+    border-radius: 4px;
+    padding: 0;
+  }
+}
+
+.thumbnailImageRed {
+  position: absolute;
+  width: 3px;
+  border-radius: 6px;
+  left: -3%;
+  z-index: 123123;
+  transform: translateY(-50%, -50%);
+  border-radius: 4px;
+  transition: height linear 3.5s;
+  background-color: #f03135;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .thumbnailImageRed {
+    position: absolute;
+    width: 0%;
+    height: 4px !important;
+    border-radius: 6px;
+    left: 5%;
+    bottom: 8px;
+    background-color: #f03135;
+    transform: translateY(-50%, -50%);
+    border-radius: 4px;
+    padding: 0;
+    transition: width linear 3.5s;
+  }
+}
+
+.thumbnailText {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media only screen and (max-width: 600px) {
+  .thumbnailText {
+    width: 100%;
+  }
+}
+
+.thumbnail {
+  width: 100%;
+}

@@ -1,0 +1,98 @@
+.news {
+  width: 100%;
+  height: auto;
+  margin-bottom: 4rem;
+}
+
+.heading {
+  width: 100%;
+  text-align: center;
+  margin-top: 3rem;
+}
+.headingSpan {
+  text-align: center;
+  margin: 0 0 10.5px;
+  font-size: 26px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  text-align: center;
+  color: #3c4a62;
+  position: relative;
+}
+.headingSpan::before {
+  content: "";
+  position: absolute;
+  width: 51px;
+  height: 0;
+  bottom: -1.5rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: solid 2px #f03135;
+  border-radius: 4px;
+}
+
+.newsCards {
+  width: 100%;
+  display: flex;
+  height: auto;
+  flex-wrap: wrap;
+
+  margin-top: 5.5rem;
+  padding-bottom: 2rem;
+}
+
+.headingSpan.newsButton {
+  margin-bottom: 5rem;
+}
+.headingSpan.newsButton::before {
+  display: none;
+}
+.headingSpan.newsButton span {
+  width: 2rem;
+  color: #fff;
+  font-size: 1.4rem;
+  margin: 48px 215px 0 225px;
+  padding: 16px 24px 15px;
+  border-radius: 44px;
+  background-color: #f03135;
+}
+
+@media only screen and (max-width: 600px) {
+  .newsSlider {
+    padding-bottom: -1rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .newButtonMobile {
+    margin-top: 5rem;
+    width: 100%;
+    color: #fff;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .newButtonMobile span {
+    margin-top: 5rem;
+    width: 50%;
+    height: 42px;
+    margin: 20px 34.8px 0 50px;
+    padding: 14px 26px;
+    border-radius: 44px;
+    background-color: #f03135;
+    color: #fff;
+    font-size: 1.2rem;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* .mobileNews {
+  height: 100%;
+  position: relative;
+  border: 4px solid green;
+}
+ */
